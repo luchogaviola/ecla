@@ -1,9 +1,11 @@
 import './Navbar.css';
+import logo from "../ecla.png";
 import Cartwidget from '../CartWidget/Cartwidget';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="aside">
+      <img className="logo" src={logo}></img>
       <nav>
         <ul className="menu">
           <li>
@@ -18,6 +20,9 @@ const Navbar = () => {
           <Cartwidget/>
         </ul>
       </nav>
+      <footer>
+          <p className="texto-footer">© 2022 Luciano Gaviola</p>
+        </footer>
     </div>
   );
 };
