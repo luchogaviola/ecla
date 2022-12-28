@@ -12,26 +12,7 @@ a {
     background-color: grey;
 }
 
-.aside {
-    padding: 2rem;
-    padding-right: 0;
-    color: white;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.logo {
-    width: 8em;
-}
-
-.texto-footer {
-    color: white;
-    font-size: .85rem;
-}
 
 
 

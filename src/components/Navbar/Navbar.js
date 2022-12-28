@@ -5,7 +5,10 @@ import Cartwidget from '../CartWidget/Cartwidget';
 const Navbar = () => {
   return (
     <div className="aside">
-      <img className="logo" src={logo}></img>
+
+      <header>
+      <img className="logo" src={logo} alt="logo" />
+      </header>
       <nav>
         <ul className="menu">
           <li>
@@ -17,7 +20,10 @@ const Navbar = () => {
           <li>
             <button className="boton-menu">Pantalones</button>
           </li>
+          <li>
           <Cartwidget/>
+          </li>
+          
         </ul>
       </nav>
       <footer>

@@ -5,6 +5,18 @@
     padding: 0;
 }
 
+.aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .cartwidget {
     width: 1.5em;
 }
@@ -60,18 +72,12 @@
     transform: rotateZ(90deg);
 }
 
-.boton-carrito {
-    margin-top: 2rem;
-}
-
-.numerito {
-    background-color: white;
-    color: grey;
-    padding: .15rem .25rem;
-    border-radius: .25rem;
-}
-
-.boton-carrito.active .numerito {
-    background-color: grey;
+.texto-footer {
     color: white;
+    font-size: .85rem;
+    margin: 0;
+}
+
+.logo {
+    width: 8em;
 }

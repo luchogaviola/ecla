@@ -1,0 +1,15 @@
+.boton-carrito {
+    margin-top: 2rem;
+}
+
+.numerito {
+    background-color: white;
+    color: grey;
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.boton-carrito.active .numerito {
+    background-color: grey;
+    color: white;
+}
