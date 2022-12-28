@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="wrapper">
 
-      <aside>
         <Navbar />
-      </aside>
 
       <ItemListContainer greeting='Todos los productos'/>
 

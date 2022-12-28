@@ -4,8 +4,9 @@ import Cartwidget from '../CartWidget/Cartwidget';
 
 const Navbar = () => {
   return (
-    <div className="aside">
+    <aside className="aside">
 
+      <div className="div__aside">
       <header>
       <img className="logo" src={logo} alt="logo" />
       </header>
@@ -20,16 +21,18 @@ const Navbar = () => {
           <li>
             <button className="boton-menu">Pantalones</button>
           </li>
-          <li>
+          
           <Cartwidget/>
-          </li>
+         
           
         </ul>
       </nav>
       <footer>
           <p className="texto-footer">© 2022 Luciano Gaviola</p>
         </footer>
-    </div>
+      </div>
+
+    </aside>
   );
 };
 
