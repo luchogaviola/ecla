@@ -1,16 +1,15 @@
-import cartwidget from '../CartWidget/cartwidget.png'
 import '../CartWidget/Cartwidget.css'
 import '../Navbar/Navbar.css'
 
 const Cartwidget = () => {
   return (
-    <ds>
+    <div>
             <a className="boton-menu boton-carrito" href="./carrito.html">
-              <img className="cartwidget" src={cartwidget} alt="cartwidget"/> Carrito{" "}
+              <img className="cartwidget" src='./images/cartwidget.png' alt="cartwidget"/> Carrito{" "}
               <span className="numerito">0</span>
             </a>
           
-    </ds>
+    </div>
   )
 }
 

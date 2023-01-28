@@ -1,6 +1,6 @@
 import './Navbar.css';
-import logo from "../ecla.png";
 import Cartwidget from '../CartWidget/Cartwidget';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -8,18 +8,18 @@ const Navbar = () => {
 
       <div className="div__aside">
       <header>
-      <img className="logo" src={logo} alt="logo" />
+      <img className="logo" src='./images/ecla.png' alt="logo" />
       </header>
       <nav>
         <ul className="menu">
           <li>
-            <button className="boton-menu active">Todos los productos</button>
+          <Link to='/'><button className="boton-menu active">Todos los productos</button></Link>
           </li>
           <li>
-            <button className="boton-menu">Camisetas</button>
+          <Link to='/category/remeras'><button className="boton-menu">Camisetas</button></Link>
           </li>
           <li>
-            <button className="boton-menu">Pantalones</button>
+          <Link to='/category/pantalones'><button className="boton-menu">Pantalones</button></Link>
           </li>
           
           <Cartwidget/>
