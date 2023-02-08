@@ -1,0 +1,29 @@
+.div-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.title-item-detail {
+    font-size: 25px;
+    padding-bottom: .4em;
+}
+
+img {
+    width: 35rem;
+}
+
+.img-padding {
+    padding-right: 3rem;
+}
+
+h4 {
+    font-size: 3rem;
+    align-self: center;
+}
+
+.p-itemdetail {
+    width: 200px;
+    font-size: 1.22rem;
+    padding-bottom: .4em;
+}

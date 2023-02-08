@@ -1,16 +1,20 @@
-import '../CartWidget/Cartwidget.css'
-import '../Navbar/Navbar.css'
+import { Link } from "react-router-dom";
+import "../CartWidget/Cartwidget.css";
+import "../Navbar/Navbar.css";
 
-const Cartwidget = () => {
+const Cartwidget = ({ quantity }) => {
   return (
     <div>
-            <a className="boton-menu boton-carrito" href="./carrito.html">
-              <img className="cartwidget" src='./images/cartwidget.png' alt="cartwidget"/> Carrito{" "}
-              <span className="numerito">0</span>
-            </a>
-          
+      <Link className="boton-menu boton-carrito" to="/cart">
+        <img
+          className="cartwidget"
+          src="./images/cartwidget.png"
+          alt="cartwidget"
+        />{" "}
+        Carrito <span className="numerito">{quantity}</span>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
 export default Cartwidget;

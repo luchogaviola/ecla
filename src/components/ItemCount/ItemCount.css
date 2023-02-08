@@ -1,0 +1,34 @@
+button {
+    background-color: grey;
+    border-color: black;
+    color: white;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+   
+}
+
+.cantidad-title {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.item-count {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.add-cart {
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: .3rem;
+    margin-top: 2rem;
+}
+
+.padding-count {
+    margin-top: 1.2rem;
+}

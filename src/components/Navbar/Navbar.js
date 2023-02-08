@@ -1,28 +1,36 @@
 import './Navbar.css';
+import { useContext } from 'react'
 import Cartwidget from '../CartWidget/Cartwidget';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
+  const { totalQuantity } = useContext(CartContext)
+
   return (
     <aside className="aside">
 
       <div className="div__aside">
       <header>
-      <img className="logo" src='./images/ecla.png' alt="logo" />
+      <img onClick={() => navigate('/')} className="logo" src='./images/ecla.png' alt="logo" />
       </header>
       <nav>
         <ul className="menu">
           <li>
-          <Link to='/'><button className="boton-menu active">Todos los productos</button></Link>
+          <NavLink className={({ isActive }) => isActive ? 'boton-menu active' : 'boton-menu'} to='/'>Todos los productos</NavLink>
           </li>
           <li>
-          <Link to='/category/remeras'><button className="boton-menu">Camisetas</button></Link>
+          <NavLink className={({ isActive }) => isActive ? 'boton-menu active' : 'boton-menu'} to='/category/remeras'>Remeras</NavLink>
           </li>
           <li>
-          <Link to='/category/pantalones'><button className="boton-menu">Pantalones</button></Link>
+          <NavLink className={({ isActive }) => isActive ? 'boton-menu active' : 'boton-menu'} to='/category/pantalones'>Pantalones</NavLink>
           </li>
           
-          <Cartwidget/>
+          <Cartwidget quantity={totalQuantity}/>
          
           
         </ul>

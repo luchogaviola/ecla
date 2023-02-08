@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "./ItemDetailContainer.css";
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({setCart}) => {
   const [product, setProduct] = useState();
   const [loading, setLoading] = useState(true);
 
@@ -33,7 +33,7 @@ const ItemDetailContainer = () => {
       <h1 className='titulo-detail'>Detalle de {product.name}</h1>
       
       <div className="ItemDetailContainer">
-        <ItemDetail {...product} />
+        <ItemDetail {...product} setCart={setCart}/>
       </div>
     </main>
   );
