@@ -3,7 +3,7 @@
 ## Instalacion
 
 ```sh
-$ git clone https://github.com/gonzalogilparicio/bookhouse.git
+$ git clone https://github.com/luchogaviola/ecla.git
 $ cd ecla
 $ npm install
 $ npm start
@@ -17,3 +17,4 @@ $ npm start
 
 ## Gif de funcionamiento:
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/99377836/218137049-79331a81-0588-4d07-b00e-12716a03bb15.gif)
