@@ -74,7 +74,7 @@ const Checkout = () => {
 
                 setTimeout(() => {
                     navigate('/')
-                }, 5000)
+                }, 50000)
 
                 console.log(id)
             } else {
@@ -95,10 +95,10 @@ if(loading) {
 if(orderId) {
     return (
           <div className="container">
-                <h4 style={{ color: "black", marginTop: "60px", marginBottom: "60px" }}>{name}, tu compra fue realizada con éxito!</h4>
-                <div className="card item-detail-card" style={{ color: "#9da5d2" }}>
-                    <div className="card-body item-detail-body">
-                        <h5 className="card-title" style={{ color: "black" }}>Tu número de compra es: {orderId}</h5>
+                <h4 style={{ color: "black", marginTop: "60px", marginBottom: "60px", fontSize: '35px' }}>{name}, tu compra fue realizada con éxito!</h4>
+                <div>
+                    <div>
+                        <h5>Tu número de compra es: {orderId}</h5>
                     </div>
                 </div>
                 <div>
