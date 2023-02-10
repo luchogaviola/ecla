@@ -17,12 +17,13 @@ const ItemDetail = ({ id, name, img, price, description, stock }) => {
       <div>
         <h4 className="title-item-detail">{name}</h4>
         <p className="p-itemdetail">$ {price}</p>
+        <p className="p-itemdetail">{description}</p>
         {isInCart(id) ? (
-          <Link to="/cart">Terminar compra</Link>
+          <Link to="/cart" className="button-ready">Terminar compra</Link>
         ) : (
           <ItemCount stock={stock} onAdd={handleOnAdd} />
         )}
-        <p className="p-itemdetail">{description}</p>
+        
         
       </div>
     </div>

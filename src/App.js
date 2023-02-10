@@ -6,16 +6,20 @@ import AppRouter from "./routes/AppRouter";
 
 import { CartProvider } from "./context/CartContext";
 
+import { NotificationProvider } from './notification/NotificationService';
+
 function App() {
 
   return (
     <div className="wrapper">
+      <NotificationProvider>
       <CartProvider>
         <BrowserRouter>
           <Navbar />
           <AppRouter />
         </BrowserRouter>
       </CartProvider>
+      </NotificationProvider>
     </div>
   );
 }
